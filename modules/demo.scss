@@ -1,0 +1,18 @@
+$sections: red skyblue blue;
+
+.section {
+  width: 300px;
+  height: 300px;
+
+  &.section-0 {
+    background-color: red;
+  }
+
+  &.section-1 {
+    background-color: skyblue;
+  }
+
+  &.section-2 {
+    background-color: blue;
+  }
+}
