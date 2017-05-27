@@ -8,8 +8,8 @@ export default class Page1 extends Component {
   }
 
   componentDidMount = () => {
+    // 'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
     this.refBackground.addEventListener('animationend', this.hanldAnimationend);
-   //  'webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend'
   }
 
   hanldAnimationend = () => {
@@ -35,7 +35,7 @@ export default class Page1 extends Component {
     return (
       <div
         ref={(ref) => this.refSection(ref)}
-        className={'animated bounceInLeft section section-' + this.state.sectionIndex}
+        className={'section section-' + this.state.sectionIndex}
         onClick={this.onClick}
       />
     );

@@ -84,7 +84,7 @@ const prodConfig = {
     }),
     new ExtractTextPlugin('static/[name].min.css?[chunkhash]'),
     new HtmlWebpackPlugin({
-      title: 'React Server Render Demo',
+      title: 'animate.css demo',
       template: 'framework/template.html',
       filename: 'index.html',
       hash: true,
