@@ -6,6 +6,7 @@ import thunk from 'redux-thunk';
 
 import { init } from './connect';
 import { init as initI18n } from './i18n';
+import { init as initCustomI18n } from './custom';
 import reducer from './reducer';
 
 const finalCreateStore = compose(
@@ -26,5 +27,6 @@ if (module.hot) {
 
 initI18n(store);
 init(store);
+initCustomI18n(store);
 
 export default store;

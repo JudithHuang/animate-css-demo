@@ -20,6 +20,7 @@ export default class Page1 extends Component {
   refSection = (ref) => {
     if (ref) {
       this.refBackground = ref;
+      console.log('======ref');
       this.refBackground.classList.add('animated', 'bounceInLeft');
     } else {
       delete this.refBackground;
